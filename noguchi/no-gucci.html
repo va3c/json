@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang=en >
+<head>
+<title></title>
+<meta charset=utf-8 >
+</head>
+<body>
+<script src=http://mrdoob.github.io/three.js/build/three.min.js ></script>
+<script src=http://mrdoob.github.io/three.js/examples/js/controls/TrackballControls.js ></script>
+<script src=http://mrdoob.github.io/three.js/examples/js/libs/stats.min.js ></script>
+<script>
+	var info, renderer, scene, camera, controls, stats;
+
+	init();
+	animate();
+
+	function init() {
+//		var css = document.body.appendChild( document.createElement('style') );
+//		css.innerHTML = 'body { font: 600 12pt monospace; margin: 0; overflow: hidden; }';
+
+		document.body.style.cssText = 'font: 600 12pt monospace; margin: 0; overflow: hidden' ;
+
+		info = document.body.appendChild( document.createElement( 'div' ) );
+		info.style.cssText = 'left: 20px; position: absolute; top: 0px; width: 100% ';
+		info.innerHTML = '<h1>Nogucci Table<h1><div id=dataDiv></div>';
+
+		stats = new Stats();
+		stats.domElement.style.cssText = 'position: absolute; right: 0; top: 0; zIndex: 100; ';
+		document.body.appendChild( stats.domElement );
+
+		renderer = new THREE.WebGLRenderer( { alpha: 1, antialias: true, clearColor: 0xffffff }  );
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		document.body.appendChild( renderer.domElement );
+		scene = new THREE.Scene();
+
+		camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.001, 100 );
+		camera.position.set( 10, 10, 10 );
+		controls = new THREE.TrackballControls( camera, renderer.domElement );
+
+		scene.add( new THREE.AmbientLight( 0xcccccc ) );
+
+		pointLight = new THREE.PointLight( 0xaaaaaa, 5, 30 );
+		pointLight.position.set( 5, 5, 5 );
+		scene.add( pointLight );
+
+// ground plane
+		var geometry, material, mesh;
+		geometry = new THREE.CubeGeometry( 10, 1, 10 );
+		texture = THREE.ImageUtils.loadTexture( "../birch256.jpg" );
+		texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+		texture.repeat.set( 3, 3);
+		material = new THREE.MeshBasicMaterial( { map: texture } );
+		mesh = new THREE.Mesh( geometry, material );
+		mesh.position.set( 0, -0.5, 0 );
+		scene.add( mesh );
+
+		loader = new THREE.JSONLoader();
+		loader.load( 'no-gucci.js', function ( geometry, materials) {
+			materials[0].opacity = 0.3;
+			materials[0].transparent = true;
+			for (var i = 0, len = materials.length; i < len; i++) {
+				materials[i].side = 2;
+			} 
+			mesh = new THREE.Mesh( geometry,  new THREE.MeshFaceMaterial( materials ) );
+			mesh.position.set( -2, 0, 0 );
+			mesh.scale.set( 100, 100, 100 )
+			scene.add( mesh );
+		} );
+	}
+	function v( x, y, z ){ return new THREE.Vector3( x, y, z ); }
+
+	function animate() {
+		requestAnimationFrame( animate );
+		controls.update();
+		renderer.render( scene, camera );
+		stats.update();
+	}
+</script>
+</body>
+</html>
