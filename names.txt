@@ -1,0 +1,26 @@
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\DrCyanKlein.json
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\DrMajentaKlein.json
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\Hex_01.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\MissSpacyEyes.json
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\TTX.json
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\TypTower.json
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\Vase_01.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\3dsmax\test_3dsmax.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\3dsmax\TransamericaPyramid2.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\aeron\hey-ron.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\archive\box-light.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\archive\Project1.rvt.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\archive\Project2.rvt.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\archive\sample.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\archive\scene.Monkey.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\archive\test.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\archive\Wall.rvt - Copy.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\archive\Wall.rvt.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\BH first working sample\jsonTester.json
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\lounge\scrounge.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\noguchi\no-gucci.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\revit\Project1.rvt.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\revit\Project2.rvt.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\revit\rac_basic_sample_project.rvt.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\revit\Wall.rvt.js
+C:\Users\theo\Dropbox\Public\git-repos\va3c.github.io\json\revit\WallWindow.rvt.js
